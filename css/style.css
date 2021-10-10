@@ -83,29 +83,64 @@ li {
   position: fixed;
   left: 0;
   width: 120px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.sideMenu:hover, .sideMenu:focus {
+  width: 220px;
+}
+.sideMenu:hover .nav-link p, .sideMenu:focus .nav-link p {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .sideMenu {
+    left: -100%;
+    opacity: 0;
+    width: 220px;
+  }
+}
+
+.sidemenuactive {
+  left: 0;
+  opacity: 1;
+}
+.sidemenuactive .nav-link p {
+  opacity: 1 !important;
 }
 
 .navbar-container {
   background: #1E212D;
   height: 100vh;
+  overflow-x: hidden;
 }
 .navbar-container a.logo-container {
   width: 100%;
   padding: 1.875rem 0;
   background: #2E3347;
 }
-.navbar-container ul.nav-container {
-  padding: 0;
-}
 .navbar-container .nav-item {
-  margin: 1.5625rem 0;
+  margin: 1.25rem 0;
   position: relative;
+  padding: 0.5rem 0;
+}
+.navbar-container .nav-item:hover, .navbar-container .nav-item:focus {
+  background: #2E3347;
+  box-shadow: 0px 8px 15px 0px rgba(24, 24, 24, 0.85);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .navbar-container .nav-link p {
   position: absolute;
-  display: none;
   opacity: 0;
   left: 50px;
+  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
 }
 .navbar-container .scroll-down {
   position: relative;
@@ -116,6 +151,16 @@ li {
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
+}
+@media only screen and (max-height: 700px) {
+  .navbar-container .scroll-down p.sm-font {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    margin-bottom: 1.125rem;
+  }
 }
 .navbar-container .scroll-down .scroll-down-text {
   position: relative;
@@ -131,6 +176,76 @@ li {
   }
   100% {
     top: 0;
+  }
+}
+
+.burger-menu {
+  position: fixed;
+  top: 35px;
+  right: 50px;
+  display: none;
+}
+.burger-menu .line {
+  width: 60px;
+  height: 5px;
+  background: #1E212D;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin: 10px 0;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.burger-menu .line:last-child {
+  width: 50%;
+}
+.burger-menu:hover, .burger-menu:focus {
+  cursor: pointer;
+}
+.burger-menu:hover .line:last-child, .burger-menu:focus .line:last-child {
+  width: 100%;
+  background: #B68973;
+}
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: block;
+    right: 25px;
+  }
+}
+
+.burgermenuclick .line {
+  background: red;
+}
+.burgermenuclick .line:first-child {
+  transform: rotate(45deg) translate(10px, 0);
+  -webkit-transform: rotate(45deg) translate(10px, 0);
+  -moz-transform: rotate(45deg) translate(10px, 0);
+  -ms-transform: rotate(45deg) translate(10px, 0);
+  -o-transform: rotate(45deg) translate(10px, 0);
+}
+.burgermenuclick .line:last-child {
+  width: 100%;
+  transform: rotate(-45deg) translate(10px, 0);
+  -webkit-transform: rotate(-45deg) translate(10px, 0);
+  -moz-transform: rotate(-45deg) translate(10px, 0);
+  -ms-transform: rotate(-45deg) translate(10px, 0);
+  -o-transform: rotate(-45deg) translate(10px, 0);
+}
+
+.mobile-logo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mobile-logo {
+    display: block;
   }
 }
 

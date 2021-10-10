@@ -1,3 +1,12 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
 // Colors
 $light_skin : #FAF3E0;
 $mid_skin: #EABF9F;
@@ -6,6 +15,7 @@ $purple : #1A41CC;
 $brown : #474747;
 $dark_blue : #1E212D;
 $white: #ffffff;
+$logo-shade: #2E3347;
 
 // Fonts
 $Roboto: 'Roboto', sans-serif;
