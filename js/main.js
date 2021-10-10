@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-      active: false
+      active: false,
+      navitem: false
     }
-  }).$mount("#app");
+}).$mount("#app");

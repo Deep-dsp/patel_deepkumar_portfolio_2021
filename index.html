@@ -9,11 +9,15 @@
     <!-- Bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
     <!-- CSS file link -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- VueJS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <main id="app">
@@ -24,12 +28,14 @@
         </a>
 
         <!-- Burger Menu -->
-        <div class="burger-menu" @click="active = !active">
+        <div class="burger-menu" v-on:click="active = !active">
             <div class="line-block" :class="{ burgermenuclick : active }">
                 <div class="line"></div> 
                 <div class="line"></div>
             </div>
         </div>
+
+        
 
         <!-- Side Menu - Navbar -->
         <aside class="sideMenu" :class="{ sidemenuactive : active }">
@@ -43,6 +49,7 @@
                 </a>
 
                 <ul class="nav-container">
+
                     <li class="nav-item">
                         <a href="#" class="nav-link d-flex align-items-center">
                             <img src="./images/icons/home.svg" alt="nav home svg icon">
@@ -51,7 +58,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center">
+                        <a href="#about" class="nav-link d-flex align-items-center">
                             <img src="./images/icons/about.svg" alt="nav home svg icon">
                             <p class="nav-text ms-3 mb-0">About</p>
                         </a>
@@ -70,6 +77,7 @@
                             <p class="nav-text ms-3 mb-0">Contact</p>
                         </a>
                     </li>
+                    
                 </ul>
 
                 <div class="scroll-down d-flex flex-column align-items-center mb-4">
@@ -81,6 +89,57 @@
             </nav>
 
         </aside>
+
+        <div class="overlay" v-on:click="active = !active" :class="{ overlay_active : active }"></div>
+
+        <!-- Wrapper -->
+        <div class="main-bg-color">
+            <div class="outerWrapper">
+
+                <!-- Home Page  -->
+                <section class="section-width-height" id="homepage">
+                    
+                    <div class="web-dev-title d-flex justify-content-center justify-content-lg-start align-items-center h-100 box-padding">
+
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+                            <h1 class="home-heading brown">
+                                Hi,<br/>
+                                I'm Deep,<br/>
+                                <span class="home-heading purple">Web Developer</span>
+                            </h1>
+
+                            <a href="#" class="custom-btn text-uppercase mt-3">Contact Me!</a>
+                        </div>
+
+                        <!-- Social Media Container -->
+                        <div class="social-media-container d-flex align-items-center">
+
+                            <div class="social-media-line me-1 me-md-3 me-lg-5"></div>
+                            <div class="social-media-icon d-flex">
+    
+                                <a href="#" class="social-media-block d-flex justify-content-center align-items-center box-shadow mx-2">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+    
+                                <a href="#" class="social-media-block d-flex justify-content-center align-items-center box-shadow mx-2">
+                                    <i class="fab fa-github-square"></i>
+                                </a>
+    
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- About Page -->
+                <section class="section-width-height d-flex align-items-center justify-content-center" id="about">
+                    Hello There
+                </section>
+
+            </div>
+        </div>
+
     </main>
 
     <!-- Main Script File -->

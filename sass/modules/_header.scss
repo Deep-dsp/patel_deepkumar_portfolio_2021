@@ -1,4 +1,5 @@
 .sideMenu{
+
     position: fixed;
     left: 0;
     width: 120px;
@@ -8,6 +9,8 @@
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
 
+    z-index: 99;
+
     &:hover,&:focus
     {
         width: 220px;
@@ -16,9 +19,10 @@
             // display: block;
             opacity: 1;
         }
+
     }
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:992px) {
         left: -100%;
         opacity: 0;
         width: 220px;
@@ -76,7 +80,7 @@
         -moz-transition: opacity 0.5s ease;
         -ms-transition: opacity 0.5s ease;
         -o-transition: opacity 0.5s ease;
-}
+    }
 
     .scroll-down{
         position: relative;
@@ -118,16 +122,23 @@
                 top: 0;
             }
         }
-            
+        
+        // @media (max-width: 992px){
+        //     position: fixed;
+        //     left: 2%;
+        //     bottom: 20px;
+        // }
     }
 }
 
 // Burger Menu
 .burger-menu{
+
     position: fixed;
     top: 35px;
     right: 50px;
     display: none;
+    z-index: 99;
 
     .line{
         width: 60px;
@@ -154,6 +165,7 @@
     &:focus{
         
         cursor: pointer;
+        // background: red;
 
         .line:last-child{
             width: 100%;
@@ -163,7 +175,7 @@
     }
 
     // Query
-    @media screen and (max-width:768px){
+    @media screen and (max-width:992px){
         display: block;
         right: 25px;
     }
@@ -174,7 +186,7 @@
 .burgermenuclick{
 
     .line{
-        background: red;
+        background: $white;
     }
 
     .line:first-child{
@@ -203,7 +215,34 @@
     top: 0;
     display: none;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 992px){
         display: block;
     }
+}
+
+// overlay
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba($dark_blue, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 98;
+    opacity: 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    display: none;
+}
+
+.overlay_active{
+    opacity: 1;
+    display: block;
+}
+
+// nav item shadow active link
+.navactive{
+    box-shadow: 0px 8px 15px 0px rgba(24, 24, 24, 0.85);
 }
