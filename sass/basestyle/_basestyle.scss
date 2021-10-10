@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+// Headings
+.home-heading{
+    font-family: $Roboto;
+    font-weight: 700;
+    line-height: 140px;
+}
+
+.nav-text{
+    font-family: $Poppins;
+    font-size: $para-text;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.sm-font{
+    font-family: $Roboto;
+    font-size: $sm-font;
+    font-weight: 400;
+}
+
+// Button
+.custom-btn{
+    font-family: $Poppins;
+    font-size: $btn-font;
+    font-weight: 700;
+    color: $purple;
+    border: 2px solid $purple;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+    padding: 2.0625rem 5.625rem; // 33px 90px
+
+    &:hover,&:focus{
+        color: $white;
+        background: $purple;
+    }
+}
+
+// Color Classes
+
+.light-skin{
+    color: $light_skin;
+}
+
+.mid-skin{
+    color: $mid_skin;
+}
+
+.dark-skin{
+    color: $dark_skin;
+}
+
+.purple{
+    color: $purple;
+}
+
+.brown{
+    color: $brown;
+}
+
+.dark-blue{
+    color: $dark_blue;
+}
+
+.white{
+    color: $white;
+}

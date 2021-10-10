@@ -1,0 +1,69 @@
+.sideMenu{
+    position: fixed;
+    left: 0;
+    width: 120px;
+}
+
+.navbar-container{
+
+    background: $dark_blue;
+    height: 100vh;
+
+    // Logo
+    a.logo-container{
+        width: 100%;
+        padding: 1.875rem 0; 
+        // padding: 1.875rem 2.495rem; //30px
+        background: #2E3347;
+    }
+
+    ul.nav-container{
+        padding: 0;
+    }
+
+    .nav-item{
+        margin: 1.5625rem 0;
+        position: relative;
+    }
+
+    .nav-link p{
+        position: absolute;
+        display: none;
+        opacity: 0;
+        left: 50px;
+    }
+
+    .scroll-down{
+        position: relative;
+        p.sm-font{
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+        }
+
+        .scroll-down-text{
+            position: relative;
+            animation: bounce 2s infinite;
+            -webkit-animation: bounce 2s infinite;
+}
+
+        @keyframes bounce{
+            0%{
+                // margin-bottom: 0;
+                top: 0;
+            }
+            50%{
+                // margin-bottom: 20px;
+                top: 20px;
+            }
+            100%{
+                // margin-bottom: 0;
+                top: 0;
+            }
+        }
+            
+    }
+}
+

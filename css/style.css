@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.home-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 140px;
+}
+
+.nav-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sm-font {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.custom-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1A41CC;
+  border: 2px solid #1A41CC;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 2.0625rem 5.625rem;
+}
+.custom-btn:hover, .custom-btn:focus {
+  color: #ffffff;
+  background: #1A41CC;
+}
+
+.light-skin {
+  color: #FAF3E0;
+}
+
+.mid-skin {
+  color: #EABF9F;
+}
+
+.dark-skin {
+  color: #B68973;
+}
+
+.purple {
+  color: #1A41CC;
+}
+
+.brown {
+  color: #474747;
+}
+
+.dark-blue {
+  color: #1E212D;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.sideMenu {
+  position: fixed;
+  left: 0;
+  width: 120px;
+}
+
+.navbar-container {
+  background: #1E212D;
+  height: 100vh;
+}
+.navbar-container a.logo-container {
+  width: 100%;
+  padding: 1.875rem 0;
+  background: #2E3347;
+}
+.navbar-container ul.nav-container {
+  padding: 0;
+}
+.navbar-container .nav-item {
+  margin: 1.5625rem 0;
+  position: relative;
+}
+.navbar-container .nav-link p {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  left: 50px;
+}
+.navbar-container .scroll-down {
+  position: relative;
+}
+.navbar-container .scroll-down p.sm-font {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+.navbar-container .scroll-down .scroll-down-text {
+  position: relative;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
