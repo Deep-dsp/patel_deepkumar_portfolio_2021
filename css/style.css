@@ -6,6 +6,10 @@
   font-size: 16px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -61,6 +65,18 @@ li {
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
+}
+
+.sm-font-20 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.page-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .custom-btn {
@@ -126,6 +142,10 @@ li {
 
 .white {
   color: #ffffff;
+}
+
+.drop-shadow {
+  box-shadow: 0px 15px 22px -7px rgba(0, 0, 0, 0.1);
 }
 
 .sideMenu {
@@ -347,21 +367,6 @@ li {
   right: 2%;
   bottom: 25px;
 }
-#homepage .social-media-line {
-  width: 600px;
-  height: 1px;
-  background: #1A41CC;
-}
-@media (max-width: 992px) {
-  #homepage .social-media-line {
-    width: 400px;
-  }
-}
-@media (max-width: 576px) {
-  #homepage .social-media-line {
-    width: 200px;
-  }
-}
 #homepage .social-media-block {
   background-color: #ffffff;
   padding: 10px;
@@ -377,6 +382,52 @@ li {
 }
 #homepage .social-media-block:hover i, #homepage .social-media-block:focus i {
   color: #B68973;
+}
+
+.social-media-line {
+  width: 600px;
+  height: 1px;
+  background: #1A41CC;
+}
+@media (max-width: 992px) {
+  .social-media-line {
+    width: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .social-media-line {
+    width: 200px;
+  }
+}
+
+#about .about-container {
+  width: 90%;
+  margin: 0 auto;
+}
+#about .about-container img {
+  max-width: 500px;
+}
+#about .about-container .my-information-block {
+  max-width: 950px;
+}
+#about .about-container .my-para-block {
+  background: #ffffff;
+  padding: 3.125rem 4.375rem;
+  margin-bottom: 3.125rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#about .about-container .resume-btn a.custom-btn {
+  padding: 20px 30px;
+}
+#about .about-container .resume-btn a.custom-btn i {
+  font-size: 1.25rem;
+}
+#about .about-container .resume-btn a.custom-btn i, #about .about-container .resume-btn a.custom-btn span {
+  margin: 0 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

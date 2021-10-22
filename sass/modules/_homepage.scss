@@ -19,20 +19,6 @@
         bottom: 25px;
     }
 
-    .social-media-line{
-        width: 600px;
-        height: 1px;
-        background: $purple;
-
-        @media (max-width: 992px){
-            width: 400px;
-        }
-
-        @media (max-width: 576px){
-            width: 200px;
-        }
-    }
-
     .social-media-block{
         background-color: $white;
         padding: 10px;
@@ -52,5 +38,19 @@
                 color: $dark_skin;
             }
         }
+    }
+}
+
+.social-media-line{
+    width: 600px;
+    height: 1px;
+    background: $purple;
+
+    @media (max-width: 992px){
+        width: 400px;
+    }
+
+    @media (max-width: 576px){
+        width: 200px;
     }
 }

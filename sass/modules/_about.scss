@@ -1,0 +1,38 @@
+#about{
+   // position: relative;
+
+   .about-container{
+
+      width: 90%;
+      margin: 0 auto;
+
+      img{
+         max-width: 500px;
+      }
+
+      .my-information-block{
+         max-width: 950px;
+      }
+
+      .my-para-block{
+         background: $white;
+         padding: 3.125rem 4.375rem;
+         margin-bottom: 3.125rem;
+         border-radius: 30px;
+         -webkit-border-radius: 30px;
+         -moz-border-radius: 30px;
+         -ms-border-radius: 30px;
+         -o-border-radius: 30px;
+         }
+
+         .resume-btn a.custom-btn{
+            padding: 20px 30px;
+            i{
+               font-size: 1.25rem;
+            }
+            i,span{
+               margin: 0 0.5rem;
+            }
+         }
+   }
+}
