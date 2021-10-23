@@ -1,17 +1,47 @@
 #about{
-   // position: relative;
+
+   padding-top: 150px;
+
+   .page-title .social-media-line{
+      @media (max-width:576px){
+         width: 50px;
+      }
+   }
 
    .about-container{
 
       width: 90%;
       margin: 0 auto;
 
-      img{
+      img.my-profile{
          max-width: 500px;
+         width: 100%;
+         filter: sepia(1);
+         -webkit-filter: sepia(1);
+
+
+         &:hover,&:focus{
+            cursor: pointer;
+            filter: sepia(0);
+            -webkit-filter: sepia(0);
+         }
+
+         @media (max-width: 1200px){
+            // position: relative;
+            // top: 100px;
+            display: none;
+         }
+
+         @media (max-width:992px){
+            max-width: 350px;
+         }
       }
 
       .my-information-block{
          max-width: 950px;
+         @media (max-width:1200px){
+            z-index: 1;
+         }
       }
 
       .my-para-block{
@@ -23,7 +53,18 @@
          -moz-border-radius: 30px;
          -ms-border-radius: 30px;
          -o-border-radius: 30px;
+
+
+         @media (max-width: 576px){
+            padding: 2.125rem 1.375rem;
+            margin-bottom: 1.125rem;
+         
+
+            .sm-font-20{
+               font-size: 1rem;
+            }
          }
+      }
 
          .resume-btn a.custom-btn{
             padding: 20px 30px;
@@ -35,4 +76,12 @@
             }
          }
    }
+}
+
+img{
+   transition: filter 0.25s ease;
+   -webkit-transition: filter 0.25s ease;
+   -moz-transition: filter 0.25s ease;
+   -ms-transition: filter 0.25s ease;
+   -o-transition: filter 0.25s ease;
 }

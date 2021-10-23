@@ -78,6 +78,12 @@ li{
     font-weight: bold;
 }
 
+.label{
+    font-family: $Roboto;
+    font-weight: normal;
+    font-size: $para-text;
+}
+
 // Button
 .custom-btn{
     font-family: $Poppins;
@@ -143,6 +149,10 @@ li{
 
 .white{
     color: $white;
+}
+
+.grey{
+    color: $grey;
 }
 
 // Drop Shadow

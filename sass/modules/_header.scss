@@ -214,6 +214,7 @@
     left: 0;
     top: 0;
     display: none;
+    z-index: 1;
 
     @media screen and (max-width: 992px){
         display: block;
