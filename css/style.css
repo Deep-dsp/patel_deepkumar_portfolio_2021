@@ -531,4 +531,29 @@ img {
   -webkit-filter: sepia(1);
 }
 
+.swiper-slide {
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background: #1A41CC !important;
+}
+
 /*# sourceMappingURL=style.css.map */

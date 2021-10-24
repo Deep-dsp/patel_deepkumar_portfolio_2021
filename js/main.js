@@ -1,8 +1,10 @@
+// Swiper
+// import "./components/swiper.js";
+// Components
 import TechSkillsIcons from "./components/techSkillsIcons.js";
 import CreativeSkillIcons from "./components/creativeSkillsIcons.js";
 
 const myVM = (()=>{
-
   var app = new Vue({
       el: '#app',
       data: {
@@ -29,3 +31,37 @@ const myVM = (()=>{
   }).$mount("#app");
 
 })();
+
+// var swiper = new Swiper('.swiper-container', {
+//   direction: 'vertical',
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   mousewheel: true,
+// grabCursor: true,
+//   loop: true,
+//   autoplay: {
+//     delay: 500,
+//     disableOnInteraction: false,
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
+
+var swiper = new Swiper(".mySwiper", {
+  // direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+  grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+});

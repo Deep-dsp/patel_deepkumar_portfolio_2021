@@ -15,6 +15,12 @@
     <!-- CSS file link -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Swiper JS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -227,17 +233,39 @@
                                         <div class="experience-container ps-0 ps-lg-4">
                                             <p class="page-title brown text-uppercase me-1 me-md-3 me-lg-5 mt-5 mt-lg-0 mb-5">Experience</p>
 
-
-                                            <div class="experience-block">
-                                                <p class="page-title purple mb-0">JUNIOR WEB DEVELOPER
-                                                </p>
-                                                <p class="label grey text-capitalize">Redding Designs Inc, London, ON</p>
-                                                <ul class="role">
-                                                    <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
-                                                    <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
-                                                    <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
-                                                </ul>
+                                            <!-- Swiper -->
+                                            <div class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="experience-block">
+                                                            <p class="page-title purple mb-0">JUNIOR WEB DEVELOPER
+                                                            </p>
+                                                            <p class="label grey text-capitalize">Redding Designs Inc, London, ON</p>
+                                                            <ul class="role">
+                                                                <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
+                                                                <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
+                                                                <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="experience-block">
+                                                            <p class="page-title purple mb-0">JUNIOR WEB DEVELOPER
+                                                            </p>
+                                                            <p class="label grey text-capitalize">Redding Designs Inc, London, ON</p>
+                                                            <ul class="role">
+                                                                <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
+                                                                <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
+                                                                <li class="label mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius ipsam veritatis, maiores doloremque a.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- Add Pagination -->
+                                                <div class="swiper-pagination"></div>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -258,6 +286,9 @@
 
     <!-- Main Script File -->
     <script type="module" src="./js/main.js"></script>
+
+    <!-- Swiper Script -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- JQuery Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
