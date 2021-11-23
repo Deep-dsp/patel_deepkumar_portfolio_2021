@@ -3,6 +3,11 @@
    padding-top: 150px;
 
    .page-title .social-media-line{
+
+      @media (max-width:1024px){
+         width: 200px;
+      }
+      
       @media (max-width:576px){
          width: 50px;
       }

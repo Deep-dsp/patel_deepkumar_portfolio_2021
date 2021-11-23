@@ -1,0 +1,91 @@
+#my-projects{
+   padding: 150px 0;
+
+   .page-title .social-media-line{
+
+      @media (max-width:1024px){
+         width: 200px;
+      }
+
+
+      @media (max-width:576px){
+         width: 50px;
+      }
+   }
+
+   & > .row{
+      width: 90%;
+      margin: 100px auto 0 auto;
+
+      @media (max-width: 576px) {
+         margin: 50px auto 0 auto;
+      }
+   }
+
+   .project-block{
+      position: relative;
+      overflow: hidden;
+      max-width: 463px;
+
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+
+      .project-details{
+         position: absolute;
+         top: 100%;
+         left: 100%;
+         opacity: 0;
+         min-height: 100%;
+         background: rgba($light_skin, 0.95);
+         padding: 20px 0;
+         transition: 0.5s ease;
+         -webkit-transition: 0.5s ease;
+         -moz-transition: 0.5s ease;
+         -ms-transition: 0.5s ease;
+         -o-transition: 0.5s ease;
+      }
+
+      .tech-block{
+         & > p{
+            font-weight: bold;
+         }
+
+         .tech-used p{
+            background: $dark_skin;
+            padding: 5px 15px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            font-weight: bold;
+         }
+      }
+
+      // Project Block Hover Effect
+      &:hover, &:focus{
+         cursor: pointer;
+
+         @media (max-width: 576px){
+            min-height: 450px;
+         }
+
+
+         .project-details{
+            top: 0;
+            left: 0;
+            opacity: 1;
+         }
+      }
+
+      .github-live{
+         a u{
+            font-weight: bold;
+         }
+      }
+   }
+}
