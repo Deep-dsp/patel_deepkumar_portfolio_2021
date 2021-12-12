@@ -443,7 +443,6 @@ li {
   -webkit-filter: sepia(1);
 }
 #about .about-container img.my-profile:hover, #about .about-container img.my-profile:focus {
-  cursor: pointer;
   filter: sepia(0);
   -webkit-filter: sepia(0);
 }
@@ -539,7 +538,6 @@ img {
   padding: 30px;
 }
 .skills-icon-container .tech-skill-block .tech-skill:hover img, .skills-icon-container .tech-skill-block .tech-skill:focus img {
-  cursor: pointer;
   filter: sepia(1);
   -webkit-filter: sepia(1);
 }
@@ -645,9 +643,33 @@ img {
   font-weight: bold;
 }
 
+#contact {
+  position: relative;
+}
+#contact:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/London.png");
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.05;
+}
 #contact > .form-container {
+  width: 100%;
   padding: 100px 0;
   min-height: 100%;
+  z-index: 99;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
 #contact form label {
   max-width: 800px;

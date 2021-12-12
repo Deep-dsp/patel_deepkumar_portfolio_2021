@@ -31,7 +31,6 @@ const myVM = (()=>{
             company: "Redding Designs Inc, London, ON ( Jul 2021 - Present )",
             responsibility : [
               "Develop pixel-perfect website according to design provided, Quality Assurance",
-              "Develop pixel-perfect website according to design provided, Quality Assurance",
               "Update live website according to client requirements",
               "Team meeting once in a week to give pitch about progress"
             ]
@@ -72,7 +71,7 @@ const myVM = (()=>{
           {
             image: 'githubpost',
             title: 'Instagram Profile Clone',
-            about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, labore eveniet autem architecto tenetur fuga eligendi nam fugit nisi harum.',
+            about: 'Clone my instagram profile to practice my Front-end programming skills and dark toggle mode to make it more fun',
             technology:["html5", "scss", "vanillajs"],
             live:"https://infallible-ritchie-d42aa6.netlify.app/",
             repo: "https://github.com/Deep-dsp/myInstagramProfile_Front_End"
@@ -81,7 +80,7 @@ const myVM = (()=>{
           {
             image: 'cheftable',
             title: 'Fanshawe The Chefs Table',
-            about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, labore eveniet autem architecto tenetur fuga eligendi nam fugit nisi harum.',
+            about: 'This project has been done under the guidance of Northern Commerce and my team was the winner of the four months workshop.',
             technology:["Shopify", "Css", "Liquid"],
             live:"https://thechefstablefanshawe.ca/",
             repo: "https://github.com/McJon/fc-cuisine"
@@ -90,10 +89,28 @@ const myVM = (()=>{
           {
             image: 'signup',
             title: 'Signup Form',
-            about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, labore eveniet autem architecto tenetur fuga eligendi nam fugit nisi harum.',
+            about: 'Form build to learn about Zurb foundation, validation and how to use local storage to check whether a user has already signed up or not.',
             technology:["html5", "css3", "foundation", "jQuery"],
             live:"https://blissful-meninsky-f5972f.netlify.app/",
             repo: "https://github.com/Deep-dsp/commerceTest"
+          },
+
+          {
+            image: 'tcc',
+            title: 'TCC Tuckersmith',
+            about: 'Great project because of the challenges such as creating complex mathematical algorithms, categorizing items, filters and AJAX programming.',
+            technology:["wordpress", "html5", "css3", "Sass", "bootstrap", "jQuery"],
+            live:"https://tcc.on.ca/",
+            repo: ""
+          },
+
+          {
+            image: 'faithmission',
+            title: 'Faith Mission Canada',
+            about: 'Another huge website which has ecommerce platform, audio books and great learning curve for me to get hands on query strings and wocommerce product templates',
+            technology:["wordpress", "woocommerce", "html5", "css3", "Sass", "bootstrap", "jQuery"],
+            live:"https://faithmissioncanada.org/",
+            repo: ""
           }
 
         ]

@@ -26,7 +26,7 @@ export default{
 
             <div class="github-live d-flex justify-content-center">
                   <a :href="sample.live" class="sm-font-20 mx-2" target="_blank"><u>LIVE</u></a>
-                  <a :href="sample.repo" class="sm-font-20 mx-2" target="_blank"><u>GITHUB</u></a>
+                  <a :href="sample.repo" v-if="sample.repo != '' " class="sm-font-20 mx-2" target="_blank"><u>GITHUB</u></a>
             </div>
 
          </div>
