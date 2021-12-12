@@ -12,6 +12,9 @@ const myVM = (()=>{
       data: {
         active: false,
         navitem: false,
+        window: {
+          width: window.innerWidth,
+        },
         techicons: [
           "icons8-html-5.svg","icons8-css3.svg","icons8-javascript.svg","icons8-wordpress.svg","jquery.png",
           "icons8-bootstrap.svg","icons8-sass.svg","icons8-npm.svg","icons8-nodejs.svg","icons8-vue-js.svg",
@@ -114,6 +117,18 @@ const myVM = (()=>{
           }
 
         ]
+      },
+      methods: {
+        closeSideNav: function() {
+          
+          if(this.window.width < 992){
+            this.active = !this.active;
+            document.querySelector("aside").classList.remove("sidemenuactive");
+            document.querySelector(".overlay").classList.remove("overlay_active");
+            document.querySelector(".line-block").classList.remove("burgermenuclick");
+          }
+          
+        }
       },
 
       components:{
