@@ -75,7 +75,7 @@ const myVM = (()=>{
             image: 'iplocator',
             title: 'IP Address Locator',
             about: 'Locate and gives infomation about current (on App Load) and entered IP address (on Form Submit)',
-            technology:["Sass", "bootstrap", "ReactJs", "axios", "ipify", "leaflet"],
+            technology:["Sass", "bootstrap", "ReactJs", "axios", "ipify", "leaflet", "react-leaflet"],
             live:"http://ipaddlocator.netlify.app/",
             repo: "https://github.com/Deep-dsp/ip-locator"
           },
