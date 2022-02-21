@@ -99,12 +99,12 @@ const myVM = (()=>{
           },
 
           {
-            image: 'tcc',
-            title: 'TCC Tuckersmith',
-            about: 'Great project because of the challenges such as creating complex mathematical algorithms, categorizing items, filters and AJAX programming.',
-            technology:["wordpress", "html5", "css3", "Sass", "bootstrap", "jQuery"],
-            live:"https://tcc.on.ca/",
-            repo: ""
+            image: 'billsplitter',
+            title: 'Bill Splitter',
+            about: 'Web app which splits total amount according the number people and how much tip they want to give. Build this project to get some understanding of reactJs structure and hooks',
+            technology:[ "html5", "css3", "Sass", "bootstrap", "ReactJs"],
+            live:"http://bills-tip-splitter.netlify.app/",
+            repo: "https://github.com/Deep-dsp/bill-splitter"
           },
 
           {
