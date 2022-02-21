@@ -72,6 +72,24 @@ const myVM = (()=>{
         work:[
 
           {
+            image: 'iplocator',
+            title: 'IP Address Locator',
+            about: 'Locate and gives infomation about current (on App Load) and entered IP address (on Form Submit)',
+            technology:["Sass", "bootstrap", "ReactJs", "axios", "ipify", "leaflet"],
+            live:"http://ipaddlocator.netlify.app/",
+            repo: "https://github.com/Deep-dsp/ip-locator"
+          },
+
+          {
+            image: 'billsplitter',
+            title: 'Bill Splitter',
+            about: 'Web app which splits total amount according the number people and how much tip they want to give. Build this project to get some understanding of reactJs structure and hooks',
+            technology:[ "html5", "css3", "Sass", "bootstrap", "ReactJs"],
+            live:"http://bills-tip-splitter.netlify.app/",
+            repo: "https://github.com/Deep-dsp/bill-splitter"
+          },
+
+          {
             image: 'githubpost',
             title: 'Instagram Profile Clone',
             about: 'Clone my instagram profile to practice my Front-end programming skills and dark toggle mode to make it more fun',
@@ -96,15 +114,6 @@ const myVM = (()=>{
             technology:["html5", "css3", "foundation", "jQuery"],
             live:"https://blissful-meninsky-f5972f.netlify.app/",
             repo: "https://github.com/Deep-dsp/commerceTest"
-          },
-
-          {
-            image: 'billsplitter',
-            title: 'Bill Splitter',
-            about: 'Web app which splits total amount according the number people and how much tip they want to give. Build this project to get some understanding of reactJs structure and hooks',
-            technology:[ "html5", "css3", "Sass", "bootstrap", "ReactJs"],
-            live:"http://bills-tip-splitter.netlify.app/",
-            repo: "https://github.com/Deep-dsp/bill-splitter"
           },
 
           {
